@@ -572,6 +572,12 @@ h3 {
 }
 .navbar-nav > li {
   width: 100%;
+  max-width: 162px;
+}
+@media (max-width: 960px) {
+  .navbar-nav > li {
+    max-width: none;
+  }
 }
 .navbar-nav > li > a {
   width: 100%;
