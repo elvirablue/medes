@@ -261,7 +261,7 @@ h3 {
 }
 .main-header .header {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 @media (max-width: 767px) {
   .main-header .header {
@@ -272,7 +272,7 @@ h3 {
   display: block;
   width: auto;
   height: auto;
-  margin: 15px 0 0;
+  margin: 10px 0 0;
   font-family: 'Gilroy-Light', sans-serif;
   font-size: 14px;
   color: #999999;
@@ -323,6 +323,7 @@ h3 {
 }
 .index-phone a.link {
   display: block;
+  padding-top: 5px;
   white-space: nowrap;
 }
 .main-footer {
