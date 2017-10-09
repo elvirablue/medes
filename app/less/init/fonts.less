@@ -1,0 +1,73 @@
+
+
+.fam(light) {
+    font-family: 'Gilroy-Light', sans-serif;
+}
+
+.fam(bold) {
+    font-family: 'Gilroy-Extrabold', sans-serif;
+}
+
+.fam(museo) {
+    font-family: 'Museo-bold', sans-serif;
+}
+
+.famLight {
+    .fam(light);
+}
+
+.famBold {
+    .fam(bold);
+}
+
+.famMuseo {
+    .fam(museo);
+}
+
+
+/** ------sizes--------- **/
+
+@f-small: @f-default - 4 + .5;
+@f-smallest: @f-default - 2;
+@f-default: 16px;
+@f-default-middle: @f-default + 2;
+@f-default-before-large: @f-default + 6;
+@f-default-large: @f-default + 8;
+@f-big: @f-default + 14;
+@f-bigest: @f-default + 20;
+@f-large: @f-default + 22;
+@f-vlarge: @f-default + 32;
+
+/** ------line height--------- **/
+
+.lineHeight(normal) {
+    line-height: normal;
+}
+
+.lineHeight(small) {
+    line-height: 1.35;
+}
+
+.lineHeight(small2) {
+    line-height: 1.45;
+}
+
+.lineHeight(middle) {
+    line-height: 1.52;
+}
+
+.lineHeight(big) {
+    line-height: 2;
+}
+
+.lineBig {
+    .lineHeight(big);
+}
+
+.lineSmall2 {
+    .lineHeight(small2);
+}
+
+.lineSmall {
+    .lineHeight(small);
+}

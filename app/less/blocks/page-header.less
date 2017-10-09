@@ -1,0 +1,42 @@
+.page-header {
+	height: 286px;
+	.bg-img(cover, bottom center);
+	padding-top: 25px;
+
+	@media @tablet-widths {height: 200px;}
+	@media @mobil-widths {min-height: 150px; height: auto;}
+
+	h1 {
+		margin-left: 165px;
+		margin-top: 55px;
+		position: relative;
+		@media @tablet-widths {margin: 35px 0 0 100px;}
+		@media @mobil-widths {margin: 20px;}
+	}
+
+	h1:before {
+		content: "";
+		position: absolute;
+		top: -5px;
+		left: 0;
+		width: 50px;
+		height: 3px;
+		background-color: #317579;
+
+	}
+}
+
+.page-header.big {
+	height: 500px;
+	@media @tablet-widths {height: 400px;}
+	@media @mobil-widths {min-height: 220px; height: auto;}
+}
+
+.page-header.bg-therapy {background-image: url(../img/bg-therapy.jpg);}
+.page-header.bg-tele {background-image: url(../img/bg-tele.jpg);}
+.page-header.bg-advice {background-image: url(../img/bg-advice.jpg);}
+.page-header.bg-history {background-image: url(../img/bg-history.jpg);}
+.page-header.bg-revision-gist {background-image: url(../img/bg-revision-gist.jpg);}
+.page-header.bg-revision-disk {background-image: url(../img/bg-revision-disk.jpg);}
+.page-header.bg-check-up {background-image: url(../img/bg-check-up.jpg);}
+

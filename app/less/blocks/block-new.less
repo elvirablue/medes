@@ -1,0 +1,47 @@
+.block-new {
+	padding: 40px 0;
+
+	.border-right {
+		border-right: 2px solid #e2e2e2;
+		@media @mobil-widths {border-right: none;}
+	}
+
+	h3.figure-title {
+		padding-bottom: 20px;
+		padding-left: 40px;
+		@media @mobil-widths {padding-left: 0;}
+	}
+
+	&__text {
+		padding-left: 20px;		
+		
+		@media @tablet-widths {}
+
+		@media @mobil-widths {padding-top: 20px; padding-left: 0;}
+
+		p {
+			color: @color-gray;
+			padding: 30px 0;
+			line-height: 1.5;
+			@media @mobil-widths {padding: 15px 0; font-size: 12px;}
+		}
+	}
+
+	.button-play-wrapper {
+		display: block;
+		text-align: center;
+		cursor: pointer;
+
+		span {
+		    display: inline-block;
+		    vertical-align: middle;
+		    padding-left: 20px;
+		    text-transform: uppercase;
+		    color: #378247;
+		    text-decoration: underline;
+		    .text-gil-bold(14px);
+		    letter-spacing: 1px;
+		}
+	}
+	
+}

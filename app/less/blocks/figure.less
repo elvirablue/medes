@@ -1,0 +1,49 @@
+
+figure.figure {
+	
+	height: 385px;	
+	padding-bottom: 110px;
+
+	@media @tablet-widths {		
+		height: 285px;		
+		padding-bottom: 90px;
+	}
+
+	@media @mobil-widths {
+		
+		max-width: 380px;
+		margin: 0 auto 30px;
+	}
+
+	.img {
+		width: 100%;
+		height: 275px;
+		.bg-img(cover, center);
+		@media @tablet-widths {height: 195px;}
+
+		@media @mobil-widths {}
+	}		
+	figcaption {		
+		padding: 15px;
+		height: 110px;		
+		background-color: @color-bg-light;
+		color: @color-lightgray;		
+		.text-gil(16px);
+		line-height: 1.3;
+		overflow: hidden;
+		@media @tablet-widths {height: 90px; font-size: 14px;}
+
+		@media @mobil-widths {font-size: 12px;}
+	}
+
+	figcaption:before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		margin-top: -7px;
+		margin-bottom: 10px;
+		background-color: #e3e2e2;
+
+	}
+}

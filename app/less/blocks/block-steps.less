@@ -1,0 +1,48 @@
+.block-steps {
+	
+	&__list {
+		padding-top: 65px;
+	}
+
+	.step {
+		display: block;
+		text-align: center;
+		padding-bottom: 40px;
+		position: relative;
+
+		span {display: block; min-height: 60px;}
+
+		@media @tablet-widths {
+			img {width: 110px;}
+			span {font-size: 12px;}
+		}
+
+		@media @mobil-widths {}
+	}
+
+	.step:before {
+		content: '';
+		width: 50px;
+		height: 18px;
+		.bg-img(contain, center);
+		background-image: url(../img/arrow-step.png);
+
+		position: absolute;
+		z-index: 10;
+		right: -15%;
+		top: 60px;
+
+		@media @tablet-widths {
+			width: 40px;
+			top: 46px;
+		}
+	}
+
+	.col-md-2 .step:before {right: -20%;}
+
+	.step.no-arrow:before {display: none;}
+
+	@media @mobil-widths {
+		.step:before {display: none;}
+	}	
+}

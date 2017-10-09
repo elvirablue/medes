@@ -1,0 +1,38 @@
+.block-form {	
+	padding-top: 50px;
+	padding-bottom: 80px;
+	.bg-img(cover, center);
+	background-image: url(../img/bg-block-form.jpg);
+	text-align: center;
+	h2 {color: #fff;}
+
+	@media @tablet-widths {
+		padding-top: 30px;
+		padding-bottom: 40px;
+	}
+
+	.ch_wrapper {
+		color: #fff;
+		opacity: 0.7;
+	}
+	
+
+	&__subtitle {
+		color: #fff;
+		.text-gil(18px);
+		opacity: 0.7;
+		padding: 20px;
+		@media @mobil-widths {
+			font-size: 14px;
+		}
+	}
+
+	.button-wrapper {
+		width: 300px;
+		margin: 15px 15px 30px;
+		@media @mobil-widths {
+			width: 290px;
+			margin: 15px auto 0;
+		}
+	}
+}

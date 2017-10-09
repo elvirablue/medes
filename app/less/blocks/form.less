@@ -1,0 +1,42 @@
+.form {
+	width: 100%;
+	max-width: 370px;
+	@media @tablet-widths {width: ~'calc(100% - 20px)'; margin-bottom: 20px;}
+
+	.bg-white {
+		padding: 35px 30px;
+		height: auto;
+		@media @tablet-widths {padding: 20px 20px 30px;}
+
+		@media @mobil-widths {padding: 15px 15px 25px;}
+	}
+
+	&__title {
+		.text-gil-bold(24px);
+		padding: 0 10px;
+		line-height: 1.7;
+		padding-bottom: 20px;
+		@media @tablet-widths {font-size: 20px;}
+
+		@media @mobil-widths {font-size: 18px;}
+	}
+	
+	&__subtitle {
+		.text-gil(16px);
+		padding: 0 10px;
+		line-height: 1.3;
+		padding-bottom: 20px;
+		@media @tablet-widths {font-size: 14px;}
+	}
+
+	.button-wrapper {
+		width: 100%;
+	}
+
+	.ch_wrapper.gray {
+		width: auto;
+		text-align: center;
+	}
+
+	
+}

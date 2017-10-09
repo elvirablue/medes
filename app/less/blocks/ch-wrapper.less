@@ -1,0 +1,94 @@
+ .ch_wrapper {
+    display: inline-block;   
+    margin: 15px 0;   
+    width: 70%;
+    padding-left: 36px;
+    text-align: center;
+    @media @mobil-widths {text-align: left;}
+
+
+    input[type=checkbox],
+    input[type=radio] {
+        display: none;       
+    }
+
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+       // .text-norm(14px); 
+       @media @mobil-widths {font-size: 12px;}
+
+        a {
+            font: inherit;
+            text-decoration: underline;
+            color: inherit;
+        }       
+    }
+   
+    input[type=checkbox]:checked + label,
+    input[type=radio]:checked + label {
+        color: inherit;        
+    }
+
+
+    input[type=checkbox] + label:before,
+    input[type=radio] + label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        position: absolute;
+        left: -40px;
+        top: -2px;        
+		border: 1px solid rgba(255, 255, 255, 0.5);        
+        background-color: #2b93a7;
+        border-radius: 50%;
+    }    
+
+   //input[type=radio] + label:before {       
+   //    border-radius: 50%;		
+   //}
+
+  //input[type=checkbox]:checked + label:before,
+  //input[type=radio]:checked + label:before {
+  //    content: "\2713";
+  //    font-size: 14px;
+  //    font-weight: bold;
+  //    color: @color-text-red;
+  //    text-align: center;
+  //    line-height: 18px;
+  //    font-weight: bold;
+
+  //    
+  //}
+
+    input[type=checkbox]:checked + label:before,
+    input[type=radio]:checked + label:before {
+    	content: "";
+        background-color: rgba(255, 255, 255, 0.5);
+    	box-shadow: inset 0 0 0 4px #2b93a7;
+    }
+}
+
+ .ch_wrapper.gray {
+    width: 70%; 
+     
+
+    label {color: @color-lightgray;}
+
+    input[type=checkbox] + label:before,
+    input[type=radio] + label:before {            
+        border: 1px solid rgba(112, 148, 158, 0.2);
+        background-color: #fff;       
+    }  
+
+    input[type=checkbox]:checked + label:before,
+    input[type=radio]:checked + label:before {       
+        background-color: rgba(112, 148, 158, 0.2);
+        box-shadow: inset 0 0 0 4px #fff;
+    }  
+
+ }

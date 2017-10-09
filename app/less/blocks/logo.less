@@ -1,0 +1,93 @@
+/* ---- site logo block styles ---- */
+
+.logo {
+
+    // 176x58
+
+    @logoHeaderWidth: 176px;
+    @logoHeaderHeight: 58px;
+
+    @logoFooterWidth: 152px;
+    @logoFooterHeight: 50px;
+
+    &--header,
+    &--footer {
+        background: inline('logo.svg') 0 0 no-repeat;
+        color: @lightGrey;
+        font-size: 12px;
+    }
+
+    &--footer {
+        .bgsize(@logoFooterWidth, @logoFooterHeight);
+        padding-left: @logoFooterWidth;
+        height: @logoFooterHeight;
+        padding-top: 7px;
+
+        @media (max-width: 768px) {
+            //background-position: 50% 0;
+            //padding-bottom: @baseIndent6;
+            display: none;
+        }
+
+    }
+
+    &--header {
+        .bgsize(@logoHeaderWidth, @logoHeaderHeight);
+        height: @logoHeaderHeight;
+        padding: 12px 30px 0 @logoHeaderWidth;
+
+        @media(max-width: 1130px) {
+            padding-right:  @baseIndent;
+        }
+
+        @media(max-width: 768px) {
+            .flex-order(10);
+            .bgsize(135px, 44px);
+            background-position: 0 50%;
+            padding-left: 135px;
+        }
+
+        @media(max-width: 580px) {
+            background-position: 50% 0;
+            padding-left: 0;
+            height: @logoHeaderHeight + 10px;
+            .bgsize(@logoHeaderWidth, @logoHeaderHeight);
+        }
+
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__about {
+        border-left: 1px solid @lightGrey;
+        font-size: @f-small;
+        height: 40px;
+        margin-left: 30px;
+        padding: 1px 0 0 30px;
+        .lineHeight(small);
+
+        //@media(max-width: 1130px) {
+        //    text-indent: -9999px;
+        //}
+
+        @media(max-width: 1130px) {
+            margin-left: 15px;
+            padding-left: 15px;
+        }
+
+        @media(max-width: 998px) {
+            display: none;
+        }
+
+        .logo--footer & {
+            margin-left: 25px;
+            padding: 2px 0 0 24px;
+        }
+
+    }
+
+}

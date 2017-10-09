@@ -1,0 +1,135 @@
+@import "variables.less";
+@import "scaffolding.less";
+
+
+@import "blocks/main-header.less";
+@import "blocks/main-footer.less";
+@import "blocks/input.less";
+@import "blocks/ch-wrapper.less";
+@import "blocks/button.less";
+@import "blocks/navbar.less";
+@import "blocks/first-screen.less";
+@import "blocks/form.less";
+@import "blocks/advantages.less";
+@import "blocks/main-info.less";
+@import "blocks/block-form.less";
+@import "blocks/social.less";
+@import "blocks/page-block.less";
+@import "blocks/page-header.less";
+@import "blocks/breadcrumbs.less";
+@import "blocks/block-description.less";
+@import "blocks/block-steps.less";
+@import "blocks/reviews.less";
+@import "blocks/slider.less";
+@import "blocks/form-search.less";
+@import "blocks/form-info.less";
+@import "blocks/block-advice.less";
+@import "blocks/figure.less";
+@import "blocks/block-new.less";
+@import "blocks/successfully.less";
+@import "blocks/modal.less";
+
+
+.hidden {
+	display: none;
+}
+ 
+.bg-img(@size,@position) {
+	background-position: @position;
+	background-size: @size;
+	background-repeat: no-repeat;
+}
+
+.wrapper-x {
+	overflow: hidden !important;
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper-y {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0 @height-footer 0;
+	min-height: 100vh;
+	@media @mobil-widths {
+		padding-bottom: @height-footer-mobil;
+	}
+}
+
+.clerfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	max-width: 1170px;
+}
+
+.cont-fluid() {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	@media @mobil-widths {
+		width: auto;
+		text-align: center;
+		min-width: 320px;
+		padding: 0 15px;
+	}
+
+}
+
+@media @tablet-widths {}
+
+@media @mobil-widths {}
+
+.text-gil(@size) {    
+	font-family: 'Gilroy-Light', sans-serif;
+  	font-size: @size;  	
+}
+
+.text-gil-bold(@size) {    
+	font-family: 'Gilroy-Extrabold', sans-serif;
+  	font-size: @size;  	
+}
+
+.text-museo(@size) {    
+	font-family: 'Museo-bold', sans-serif;
+	font-size: @size;  	
+}
+
+.text-light {
+	color: #fff;
+	.text-gil(18px);
+	opacity: 0.7;
+	padding: 20px 0;
+	@media @tablet-widths {
+		font-size: 14px;
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.sepia() { 
+    filter: sepia(100%);
+   }
+.engrave() { 
+    filter: grayscale(100%);
+}
+
+.shadow() {
+	filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
+}
